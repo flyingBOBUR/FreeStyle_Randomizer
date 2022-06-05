@@ -14,8 +14,10 @@ $(function() {
 
 var bgOption1 = document.getElementById("bgOption1");
 var bgOption2 = document.getElementById("bgOption2");
+var bgOption3 = document.getElementById("bgOption3");
 bgOption1.addEventListener('click', setBackGround1);
 bgOption2.addEventListener('click', setBackGround2);
+bgOption3.addEventListener('click', setBackGround3);
 
 function setBackGround1(){
     $('body').css('background-image', 'url(https://images4.alphacoders.com/184/thumb-1920-184888.jpg)');
@@ -26,6 +28,13 @@ function setBackGround1(){
 
 function setBackGround2(){
     $('body').css('background-image', 'url(https://wallpaperaccess.com/full/1519790.jpg)');
+    $('.topic').css('background', 'rgba(82, 82, 82, 0.7)');
+    $('.startBtn').css('background', 'rgba(82, 82, 82, 0.7)');
+    $('.stopBtn').css('background', 'rgba(82, 82, 82, 0.7)');
+}
+
+function setBackGround3(){
+    $('body').css('background-image', 'url(https://wallpaper.dog/large/17172602.jpg)');
     $('.topic').css('background', 'rgba(82, 82, 82, 0.7)');
     $('.startBtn').css('background', 'rgba(82, 82, 82, 0.7)');
     $('.stopBtn').css('background', 'rgba(82, 82, 82, 0.7)');
