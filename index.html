@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/audioPlayer/mediaelementplayer.min.css" />
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="window_overlay"></div>
+    <div id="window_entrance" class="window_content">
+    <a href="#" class="window_close">&times;</a>
+    <h2>FreeStyle Randomizer</h2><br>
+    FreeStyle Randomizer is web for freestylers. On this web page you can find only the random topics nothing more.
+
+    <h2>You can set your background image</h2>
+    <div class="backGroundsImages">
+        <div class="bgOption" id="bgOption1"><img src="https://images4.alphacoders.com/184/thumb-1920-184888.jpg"></div>
+        <div class="bgOption" id="bgOption2"><img src="https://wallpaperaccess.com/full/1519790.jpg"></div>
+    </div>
+    </div>
+    
+
+    <div class="startBtnP">
+        <div class="startBtn" id="startBtn">Start Freestyle</div>
+    </div>
+
+
+    <div class="topicAndBeat">
+        
+        <div class="topic" id="topic">
+
+            <h2 class="instruction1" id="instruction1">Chose time to make a topic change</h2>
+            <div class="timeToChange" id="timeToChange">
+                <div class="time" id="time20">20</div>
+                <div class="time" id="time30">30</div>
+                <div class="time" id="time40">40</div>
+                <div class="time" id="time50">50</div>
+                <div class="time" id="time60">60</div>
+            </div>
+
+            <div class="timerToChange"><h2 id="timerText">time to change: <span id="timerValue">non-set</span></h2></div>
+
+            <div class="Topic" id="Topic"><b>non-started</b></div>
+        </div>
+    </div>
+    <div class="stopBtnP" id="stopBtn">
+        <div class="stopBtn">Stop</div>
+    </div>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
